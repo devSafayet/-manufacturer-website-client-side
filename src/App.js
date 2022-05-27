@@ -4,6 +4,7 @@ import Dashboard from './Components/Dashboard/Dashboard/Dashboard';
 import Home from './Components/Home/Home/Home';
 import Blog from './Components/Pages/Blog/Blog';
 import Portfolio from './Components/Pages/Portfolio/Portfolio';
+import RequireAuth from './Components/Pages/RequireAuth/RequireAuth';
 import SignIn from './Components/Pages/SignIn/SignIn';
 import SignUp from './Components/Pages/SignUP/SignUp';
 import Footer from './Components/Shared/Footer/Footer';
@@ -16,7 +17,14 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' element={<Home />}></Route>
-        <Route path='/dashboard' element={<Dashboard />}></Route>
+
+        <Route path='/dashboard' element={
+          <RequireAuth>
+            <Dashboard></Dashboard>
+          </RequireAuth>}>
+
+        </Route>
+
         <Route path='/blog' element={<Blog />}></Route>
         <Route path='/portfolio' element={<Portfolio />}></Route>
         <Route path='/signin' element={<SignIn />}></Route>
