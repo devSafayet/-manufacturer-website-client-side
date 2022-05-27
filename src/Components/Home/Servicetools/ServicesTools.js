@@ -34,7 +34,7 @@ const ServicesTools = () => {
 
     }
 
-    const hendelparchas = tool => {
+    const handlepurchase = tool => {
         navigate(`/purchase/${tool._id}`)
 
         // console.log(user);
@@ -64,7 +64,7 @@ const ServicesTools = () => {
                                     ?
                                     <button className="btn btn-primary" >Try Later</button>
                                     :
-                                    <button className="btn btn-primary  font-bold" onClick={() => hendelparchas(tool)}>Purchas<span className='text-green-500 font-bold m-2 text-2xl'><FiShoppingCart /></span></button>
+                                    <button className="btn btn-primary  font-bold" onClick={() => handlepurchase(tool)}>Purchas<span className='text-green-500 font-bold m-2 text-2xl'><FiShoppingCart /></span></button>
                                 }
                             </div>
                         </div>
