@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Dashboard from './Components/Dashboard/Dashboard/Dashboard';
+import MyProfile from './Components/Dashboard/MyProfile/MyProfile';
 import Home from './Components/Home/Home/Home';
 import Blog from './Components/Pages/Blog/Blog';
 import Portfolio from './Components/Pages/Portfolio/Portfolio';
@@ -22,7 +23,7 @@ function App() {
           <RequireAuth>
             <Dashboard></Dashboard>
           </RequireAuth>}>
-
+          <Route path='myprofile' element={<MyProfile></MyProfile>}></Route>
         </Route>
 
         <Route path='/blog' element={<Blog />}></Route>
