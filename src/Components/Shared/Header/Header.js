@@ -20,7 +20,7 @@ const Header = () => {
                 ?
                 <Link to="/signin" onClick={logOut}>SignOut</Link>
                 :
-                <Link to='/signin'>SignIn</Link>
+                <Link to='/signin'>Signin</Link>
         }</li>
 
 
