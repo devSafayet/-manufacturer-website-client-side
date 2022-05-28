@@ -17,9 +17,9 @@ import NotFound from './Components/Shared/NotFound/NotFound';
 import AddProducts from './Components/Dashboard/AddProducts/AddProducts';
 import RequireAdmin from './Components/Hooks/RequireAdmin/RequireAdmin';
 import ManageAllOrders from './Components/Dashboard/ManageAllOrders/ManageAllOrders';
-import AllUsers from './Components/Dashboard/AllUsers/AllUsers';
 import ManageProducts from './Components/Dashboard/ManageProducts/ManageProducts';
 import { ToastContainer } from 'react-toastify';
+import AllUser from './Components/Dashboard/AllUser/AllUser';
 
 function App() {
   return (
@@ -61,9 +61,9 @@ function App() {
             </RequireAdmin>
           }></Route>
 
-          <Route path='makeAdmin' element={
+          <Route path='makeadmin' element={
             <RequireAdmin>
-              <AllUsers></AllUsers>
+              <AllUser />
             </RequireAdmin>
           }></Route>
 
