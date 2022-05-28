@@ -14,12 +14,13 @@ import SignUp from './Components/Pages/SignUP/SignUp';
 import Footer from './Components/Shared/Footer/Footer';
 import Header from './Components/Shared/Header/Header';
 import NotFound from './Components/Shared/NotFound/NotFound';
-import AddProducts from './Components/Dashboard/AddProducts/AddProducts';
 import RequireAdmin from './Components/Hooks/RequireAdmin/RequireAdmin';
 import ManageAllOrders from './Components/Dashboard/ManageAllOrders/ManageAllOrders';
 import ManageProducts from './Components/Dashboard/ManageProducts/ManageProducts';
 import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import AllUser from './Components/Dashboard/AllUser/AllUser';
+import AddProducts from './Components/Dashboard/AddProducts/AddProducts';
 
 function App() {
   return (
@@ -27,12 +28,12 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' element={<Home />}></Route>
-
+        {/* purchestools */}
         <Route path='/dashboard' element={
           <RequireAuth>
             <Dashboard />
           </RequireAuth>}>
-
+          {/* payment */}
           <Route path='addproducts' element={
             <RequireAdmin>
               <AddProducts />
