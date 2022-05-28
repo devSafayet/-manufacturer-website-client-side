@@ -80,7 +80,7 @@ const Portfolio = () => {
             {/* My Best Project link Area  */}
             <div className='mb-10 justify-center'>
                 <h1 className='text-6xl mb-8 font-semibold text-blue-400 text-center'>My Best Projects</h1>
-                <div className='flex items-center'>
+                <div className='flex justify-around'>
                     <div class="card w-96 bg-base-100 shadow-xl image-full ">
                         <div class="card-body">
                             <h2 class="card-title">Apple Store!</h2>

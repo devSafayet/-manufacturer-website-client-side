@@ -48,7 +48,7 @@ const Services = () => {
                                 Facts. Privacy Friendly. The Best Resources.
                             </p>
                         </div>
-                        <div className='flex align-items-center px-2'>
+                        <div className='flex justify-center px-2'>
                             {services.map((service) => (
                                 <div key={service.id}>
                                     <div className="service-card">
