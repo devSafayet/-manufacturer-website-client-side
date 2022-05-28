@@ -1,13 +1,14 @@
 import React from 'react';
 import Typical from 'react-typical';
-
+import './Portfolio.css';
+import myImg from '../../../Images/myImg.jpg';
 const Portfolio = () => {
     return (
         <div className='banner-area'>
-            <div class="hero min-h-screen bg-base-200">
-                <div class="hero-content flex-col lg:flex-row-reverse">
-                    <img src="https://api.lorem.space/image/movie?w=260&h=400" class="max-w-sm rounded-lg shadow-2xl" />
-                    <div>
+            <div class="hero min-h-screen bg-white">
+                <div class="hero-content flex-col lg:flex-row-reverse banner-img">
+                    <img src={myImg} alt="" />
+                    <div className='banner-intro'>
                         <h5>Assalamu Alaikum..!</h5>
                         <h1>
                             I'm Md. SafayeTul Islam Sayem.
@@ -16,7 +17,7 @@ const Portfolio = () => {
                             I am a{' '} <span>
                                 <Typical
                                     steps={[
-                                        'I’m currently learning Web Developer',
+                                        'Junior Web Developer',
                                         1000,
                                         'Frontend Developer',
                                         1000,
@@ -28,26 +29,80 @@ const Portfolio = () => {
                                     loop={Infinity}
                                     wrapper="b"
                                 />
-                                {/*  <Typical
-                                    loop={Infinity}
-                                    wrapper="b"
-                                    steps={[
-                                        'I’m currently learning Web Developer',
-                                        1000,
-                                        'Frontend Developer',
-                                        1000,
-                                        'React Developer',
-                                        1000,
-                                        'Competitive Programmer',
-                                        1000
-                                    ]} */}
 
                             </span>
                         </h3>
+                        <p>
+                            I’m currently learning Web Developer. I am working on front end design and development with <span className='text-black'>HTML, CSS, Bootstrap, Tailwind, Daisyui,
+                                JavaScript, React JS, Firebase, Express JS, MongoDB.</span> I can make dynamic and responsive website for
+                            mobile.
+                        </p>
+                        <div className="social-link">
+                            <a href="https://www.facebook.com/safayet003.admin/" target="_blank">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+                            <a
+                                href="https://www.linkedin.com/in/https://www.linkedin.com/in/safayet003-admin/"
+                                target="_blank"
+                            >
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a
+                                href="https://github.com/safayet003-admin"
+                                target="_blank"
+                            >
+                                <i class="fab fa-github-square"></i>
+                            </a>
+                        </div>
+
+
                     </div>
                 </div>
             </div>
+            {/* My Skill Area  */}
+            <div className='text-center mb-10'>
+                <h1 className='text-6xl mb-8 font-semibold text-blue-400'>My Skill</h1>
+                <div className=''>
+                    <button className="btn m-2 bg-success">Html5</button>
+                    <button className="btn m-2 bg-success">CSS3</button>
+                    <button className="btn m-2 bg-success">Bootstrap</button>
+                    <button className="btn m-2 bg-success">Tailwind</button>
+                    <button className="btn m-2 bg-success">JavaScript</button>
+                    <button className="btn m-2 bg-success">React JS</button>
+                    <button className="btn m-2 bg-success">Firebase</button>
+                    <button className="btn m-2 bg-success">Express JS</button>
+                    <button className="btn m-2 bg-success">MongoDB</button>
 
+                </div>
+            </div>
+            {/* My Best Project link Area  */}
+            <div className='mb-10 justify-center'>
+                <h1 className='text-6xl mb-8 font-semibold text-blue-400 text-center'>My Best Projects</h1>
+                <div className='flex items-center'>
+                    <div class="card w-96 bg-base-100 shadow-xl image-full ">
+                        <figure><img src="https://api.lorem.space/image/shoes?w=400&h=225" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Shoes!</h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <div class="card-actions justify-center">
+                                <button class="btn btn-primary">Buy Now</button>
+                                <button class="btn btn-primary">Buy Now</button>
+                                <button class="btn btn-primary">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card w-96 bg-base-100 shadow-xl image-full">
+                        <figure><img src="https://api.lorem.space/image/shoes?w=400&h=225" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Shoes!</h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <div class="card-actions justify-end">
+                                <button class="btn btn-primary">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };

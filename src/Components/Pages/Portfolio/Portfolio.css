@@ -1,0 +1,84 @@
+.banner-area {
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 140px;
+}
+
+.banner-img img {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    border: 10px solid #e67e22;
+    transition: .4s;
+}
+
+.banner-img:hover img {
+    border: 10px solid #e74c3c;
+    transform: scale(1.1);
+}
+
+.banner-intro h5 {
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.banner-intro h1 {
+    color: #2c3e50;
+    font-size: 50px;
+}
+
+.banner-intro h3 {
+    color: #2c3e50;
+    font-size: 35px;
+}
+
+.banner-intro h3 span {
+    color: #e67e22;
+    font-weight: 700;
+}
+
+.banner-intro p {
+    color: #7f8c8d;
+    font-size: 18px;
+    width: 530px;
+}
+
+.social-link a {
+    font-size: 40px;
+    margin-right: 20px;
+}
+
+.social-link .fa-facebook-square {
+    color: #166FE5;
+}
+
+.social-link .fa-linkedin {
+    color: #0A66C2;
+}
+
+.social-link .fa-github-square {
+    color: #24292F;
+}
+
+@media only screen and (max-width: 575px) {
+
+    .banner-img img {
+        margin-top: 20px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .banner-intro h1 {
+        font-size: 30px;
+    }
+
+    .banner-intro h3 {
+        font-size: 22px;
+    }
+
+    .banner-intro p {
+        width: 100%;
+        font-size: 15px;
+    }
+}
