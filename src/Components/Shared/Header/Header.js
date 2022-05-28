@@ -13,6 +13,12 @@ const Header = () => {
 
     const menu = <>
         <li><Link to='/'>Home</Link></li>
+        {
+            user
+            &&
+            <li><Link to="/dashboard">Dashbord</Link></li>
+
+        }
         <li><Link to='/blog'>Blogs</Link></li>
         <li><Link to='/portfolio'>Portfolio</Link></li>
         <li>{

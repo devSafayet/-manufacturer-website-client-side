@@ -23,6 +23,7 @@ function App() {
           <RequireAuth>
             <Dashboard></Dashboard>
           </RequireAuth>}>
+          <Route index element={<MyProfile></MyProfile>}></Route>
           <Route path='myprofile' element={<MyProfile></MyProfile>}></Route>
         </Route>
 
