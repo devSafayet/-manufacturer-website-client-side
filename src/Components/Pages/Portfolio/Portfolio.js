@@ -80,24 +80,24 @@ const Portfolio = () => {
                 <h1 className='text-6xl mb-8 font-semibold text-blue-400 text-center'>My Best Projects</h1>
                 <div className='flex items-center'>
                     <div class="card w-96 bg-base-100 shadow-xl image-full ">
-                        <figure><img src="https://api.lorem.space/image/shoes?w=400&h=225" alt="Shoes" /></figure>
                         <div class="card-body">
-                            <h2 class="card-title">Shoes!</h2>
-                            <p>If a dog chews shoes whose shoes does he choose?</p>
-                            <div class="card-actions justify-center">
-                                <button class="btn btn-primary">Buy Now</button>
-                                <button class="btn btn-primary">Buy Now</button>
-                                <button class="btn btn-primary">Buy Now</button>
+                            <h2 class="card-title">Apple Store!</h2>
+                            <p>This is Single page simple web applications.</p>
+                            <div class="card-actions">
+                                <button class="btn btn-primary text-white"><a target="_blank" href="https://apple-store-abe66.web.app/">Live Site</a></button>
+                                <button class="btn btn-success text-white"><a target="_blank" href="https://github.com/ProgrammingHeroWC4/warehouse-management-client-side-safayet003-admin">Client Site</a></button>
+                                <button class="btn btn-success text-white"><a target="_blank" href="https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-safayet003-admin">Server Site</a></button>
                             </div>
                         </div>
                     </div>
                     <div class="card w-96 bg-base-100 shadow-xl image-full">
-                        <figure><img src="https://api.lorem.space/image/shoes?w=400&h=225" alt="Shoes" /></figure>
                         <div class="card-body">
                             <h2 class="card-title">Shoes!</h2>
                             <p>If a dog chews shoes whose shoes does he choose?</p>
-                            <div class="card-actions justify-end">
-                                <button class="btn btn-primary">Buy Now</button>
+                            <div class="card-actions">
+                                <button class="btn btn-primary text-white"><a target="_blank" href="https://independent-service-prov-48603.web.app/">Live Site</a></button>
+                                <button class="btn btn-success text-white"><a target="_blank" href="https://github.com/programming-hero-web-course-4/independent-service-provider-safayet003-admin">Client Site</a></button>
+
                             </div>
                         </div>
                     </div>
