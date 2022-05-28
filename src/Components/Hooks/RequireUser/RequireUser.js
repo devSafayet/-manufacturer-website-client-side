@@ -13,7 +13,7 @@ const RequireUser = ({ children }) => {
     const location = useLocation()
 
     if (loading || adminLoading) {
-        return <Loading></Loading>
+        // return <Loading></Loading>
     }
 
 
