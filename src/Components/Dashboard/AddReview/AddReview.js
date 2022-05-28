@@ -8,7 +8,7 @@ const AddReview = () => {
     const { register, formState: { errors }, handleSubmit, reset } = useForm();
     const imagestorage_key = '8c9e657645bc7264c5c4e9c24848e699';
     const [user] = useAuthState(auth)
-    console.log(user);
+    // console.log(user);
     const onSubmit = async (data) => {
 
         const formData = new FormData();
@@ -31,9 +31,9 @@ const AddReview = () => {
                         email: user.email
 
                     }
-                    console.log(review);
+                    // console.log(review);
 
-                    fetch('https://localhost:5000/review', {
+                    fetch('http://localhost:5000/review', {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json',
@@ -43,7 +43,7 @@ const AddReview = () => {
                     })
                         .then(res => res.json())
                         .then(inserted => {
-                            console.log(inserted);
+                            // console.log(inserted);
                             if (inserted.insertedId) {
                                 toast.success('Review add successful.')
                                 reset();

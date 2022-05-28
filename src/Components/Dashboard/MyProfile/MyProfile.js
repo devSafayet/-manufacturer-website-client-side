@@ -21,14 +21,14 @@ const MyProfile = () => {
         })
             .then(res => res.json())
             .then(result => {
-                console.log(result);
+                // console.log(result);
                 if (result.success) {
                     const img = result.data.url
                     const userinfo = {
                         img: img,
                         phone: data.phone
                     }
-                    console.log(userinfo);
+                    // console.log(userinfo);
                     // send to you database
                     fetch(`https://localhost:5000/userinfo/${user.email}`, {
                         method: 'PUT',

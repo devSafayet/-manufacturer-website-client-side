@@ -92,8 +92,8 @@ const Portfolio = () => {
                     </div>
                     <div class="card w-96 bg-base-100 shadow-xl image-full">
                         <div class="card-body">
-                            <h2 class="card-title">Shoes!</h2>
-                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <h2 class="card-title">DR. Kaneez Fatema!</h2>
+                            <p>This is DR. Kaneez Fatema Website. It's a Independent Service Provider Website.</p>
                             <div class="card-actions">
                                 <button class="btn btn-primary text-white"><a target="_blank" href="https://independent-service-prov-48603.web.app/">Live Site</a></button>
                                 <button class="btn btn-success text-white"><a target="_blank" href="https://github.com/programming-hero-web-course-4/independent-service-provider-safayet003-admin">Client Site</a></button>
