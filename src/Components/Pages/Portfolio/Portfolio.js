@@ -59,6 +59,7 @@ const Portfolio = () => {
                     </div>
                 </div>
             </div>
+            <div class="divider"></div>
             {/* My Skill Area  */}
             <div className='text-center mb-10'>
                 <h1 className='text-6xl mb-8 font-semibold text-blue-400'>My Skill</h1>
@@ -75,6 +76,7 @@ const Portfolio = () => {
 
                 </div>
             </div>
+            <div class="divider"></div>
             {/* My Best Project link Area  */}
             <div className='mb-10 justify-center'>
                 <h1 className='text-6xl mb-8 font-semibold text-blue-400 text-center'>My Best Projects</h1>
