@@ -39,7 +39,7 @@ const AddProducts = () => {
                     }
                     console.log(product);
                     // send to you database
-                    fetch('http://localhost:5000/products', {
+                    fetch('https://blooming-beyond-08690.herokuapp.com/products', {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json',

@@ -7,7 +7,7 @@ const MakeAdmin = () => {
     const [deleteUser, setDeleteUser] = useState(null)
 
     useEffect(() => {
-        fetch(`http://localhost:5000/users`, {
+        fetch(`https://blooming-beyond-08690.herokuapp.com/users`, {
             method: 'GET',
             headers: {
                 'content-type': 'application/json',

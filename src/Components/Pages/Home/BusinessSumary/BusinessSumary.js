@@ -3,7 +3,8 @@ import { RiFlagLine } from "@react-icons/all-files/ri/RiFlagLine";
 import { VscTools } from "@react-icons/all-files/vsc/VscTools";
 import { IoIosPeople } from "@react-icons/all-files/io/IoIosPeople";
 import { BiLike } from "@react-icons/all-files/bi/BiLike";
-import bg from '../../../../Images/bg.png'
+import bg from '../../../../Images/bg.png';
+import CountUp from 'react-countup';
 const BusinessSumary = () => {
     return (
         <div
@@ -23,28 +24,38 @@ const BusinessSumary = () => {
                 <div className="card max;w-lg">
                     <div className="card-body items-center text-center">
                         <span className='text-success text-7xl'><VscTools /></span>
-                        <h2 className="card-title text-5xl">298</h2>
-                        <p className="text-2xl text-success">Motor Bike Tools</p>
+                        <h2 className="card-title text-5xl">
+                            <CountUp end={782} />+
+
+                        </h2>
+
+                        <p className="text-2xl text-success">Motor Bike Parts</p>
                     </div>
                 </div>
                 <div className="card max;w-lg">
                     <div className="card-body items-center text-center">
                         <span className='text-success text-7xl'><RiFlagLine /></span>
-                        <h2 className="card-title text-5xl">62</h2>
+                        <h2 className="card-title text-5xl">
+                            <CountUp end={21} />+
+                        </h2>
                         <p className="text-2xl text-success">countries</p>
                     </div>
                 </div>
                 <div className="card max;w-lg">
                     <div className="card-body items-center text-center">
                         <span className='text-success text-7xl'><IoIosPeople /></span>
-                        <h2 className="card-title text-5xl">320</h2>
+                        <h2 className="card-title text-5xl">
+                            <CountUp end={550} />+
+                        </h2>
                         <p className="text-2xl text-success">Customer Service</p>
                     </div>
                 </div>
                 <div className="card max;w-lg">
                     <div className="card-body items-center text-center">
                         <span className='text-success text-7xl'><BiLike /></span>
-                        <h2 className="card-title text-5xl">100K</h2>
+                        <h2 className="card-title text-5xl">
+                            <CountUp end={1000} />+
+                        </h2>
                         <p className="text-2xl text-success">Review</p>
                     </div>
                 </div>

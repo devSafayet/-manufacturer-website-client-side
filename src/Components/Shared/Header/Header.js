@@ -47,7 +47,7 @@ const Header = () => {
                         {menu}
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl font-mono "><span className='text-white '>Motor Bike parts</span></a>
+                <a className="btn btn-ghost normal-case text-xl font-mono "><span className='text-white '>Moto World</span></a>
             </div>
             <div className="lg:navbar-end navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal p-0">

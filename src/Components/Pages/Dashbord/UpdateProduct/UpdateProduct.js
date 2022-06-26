@@ -8,7 +8,7 @@ const UpdateProduct = () => {
     const { register, formState: { errors }, handleSubmit, reset } = useForm();
     const { productId } = useParams()
 
-    const { data: tool, refetch } = useQuery('tool', () => fetch(`http://localhost:5000/products/${productId}`).then(res => res.json()));
+    const { data: tool, refetch } = useQuery('tool', () => fetch(`https://blooming-beyond-08690.herokuapp.com/products/${productId}`).then(res => res.json()));
 
 
     const onSubmit = async data => {
@@ -19,7 +19,7 @@ const UpdateProduct = () => {
             minimum: data.minimum,
             price: data.price,
         }
-        const url = `http://localhost:5000/product/${productId}`
+        const url = `https://blooming-beyond-08690.herokuapp.com/product/${productId}`
         console.log(url);
         fetch(url, {
             method: "PUT",

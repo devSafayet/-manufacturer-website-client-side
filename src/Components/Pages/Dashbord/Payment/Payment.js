@@ -15,7 +15,7 @@ const Payment = () => {
 
     const { orderid } = useParams()
 
-    const { data: order, isLoading } = useQuery('tools', () => fetch(`http://localhost:5000/specificorders/${orderid}`, {
+    const { data: order, isLoading } = useQuery('tools', () => fetch(`https://blooming-beyond-08690.herokuapp.com/specificorders/${orderid}`, {
         method: 'GET',
         headers: {
             'authorization': `Bearer ${localStorage.getItem('accessToken')}`

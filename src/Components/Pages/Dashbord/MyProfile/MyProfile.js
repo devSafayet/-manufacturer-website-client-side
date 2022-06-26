@@ -30,7 +30,7 @@ const MyProfile = () => {
                     }
                     console.log(userinfo);
                     // send to you database
-                    fetch(`http://localhost:5000/userinfo/${user.email}`, {
+                    fetch(`https://blooming-beyond-08690.herokuapp.com/userinfo/${user.email}`, {
                         method: 'PUT',
                         headers: {
                             'content-type': 'application/json',

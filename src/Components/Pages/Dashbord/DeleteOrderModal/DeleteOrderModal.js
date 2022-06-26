@@ -6,7 +6,7 @@ const DeleteUserModal = ({ orderDelete, setOrderDelete }) => {
 
     const hendeldelete = () => {
 
-        const url = `http://localhost:5000/orders/${orderDelete._id}`
+        const url = `https://blooming-beyond-08690.herokuapp.com/orders/${orderDelete._id}`
         fetch(url, {
             method: "DELETE",
             headers: {

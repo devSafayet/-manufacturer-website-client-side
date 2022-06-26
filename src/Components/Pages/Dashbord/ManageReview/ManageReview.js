@@ -3,7 +3,7 @@ import { useQuery } from 'react-query';
 import { toast } from 'react-toastify';
 
 const ManageReview = () => {
-    const { data: review, refetch } = useQuery('reviews', () => fetch('http://localhost:5000/getreviews', {
+    const { data: review, refetch } = useQuery('reviews', () => fetch('https://blooming-beyond-08690.herokuapp.com/getreviews', {
         method: 'GET',
         headers: {
             'Content-type': 'application/json',
@@ -18,7 +18,7 @@ const ManageReview = () => {
         const procide = window.confirm("Are You Sure?You Want to Delete?")
 
         if (procide) {
-            fetch(`http://localhost:5000/review/${id}`, {
+            fetch(`https://blooming-beyond-08690.herokuapp.com/review/${id}`, {
                 method: 'DELETE',
                 headers: {
                     'content-type': 'application/json',

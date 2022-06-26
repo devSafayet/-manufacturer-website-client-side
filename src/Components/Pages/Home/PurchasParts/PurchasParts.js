@@ -17,7 +17,7 @@ const PurchasParts = () => {
     const PhoneRef = useRef('');
     const [error, setError] = useState(null)
 
-    const { data: tool, isLoading, refetch } = useQuery('tool', () => fetch(`http://localhost:5000/products/${id}`).then(res => res.json()));
+    const { data: tool, isLoading, refetch } = useQuery('tool', () => fetch(`https://blooming-beyond-08690.herokuapp.com/products/${id}`).then(res => res.json()));
 
     if (isLoading) {
         return <Loading></Loading>
@@ -67,7 +67,7 @@ const PurchasParts = () => {
 
             // console.log(quantity)
 
-            const url = `http://localhost:5000/products/${id}`
+            const url = `https://blooming-beyond-08690.herokuapp.com/products/${id}`
             // console.log(url);
             fetch(url, {
                 method: "PUT",
@@ -84,7 +84,7 @@ const PurchasParts = () => {
 
             // post order
 
-            fetch('http://localhost:5000/orders', {
+            fetch('https://blooming-beyond-08690.herokuapp.com/orders', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json',

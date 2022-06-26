@@ -5,7 +5,7 @@ const UserRow = ({ user, setDeleteUser, index }) => {
 
     const { email, role } = user;
     const hendelMakeAdmin = () => {
-        fetch(`http://localhost:5000/user/admin/${email}`, {
+        fetch(`https://blooming-beyond-08690.herokuapp.com/user/admin/${email}`, {
             method: 'PUT',
             headers: {
                 authorization: `Bearer ${localStorage.getItem('accessToken')}`

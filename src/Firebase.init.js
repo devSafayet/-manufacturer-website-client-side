@@ -1,17 +1,17 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAuth } from 'firebase/auth'
+import { getAuth } from 'firebase/auth';
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCuF-SUM5XCwmUz3ssGP2kb04tX9wmqEAw",
-  authDomain: "moto-world-42bb4.firebaseapp.com",
-  projectId: "moto-world-42bb4",
-  storageBucket: "moto-world-42bb4.appspot.com",
-  messagingSenderId: "395581320029",
-  appId: "1:395581320029:web:5abd12924d55d37aaad6b4"
+  apiKey: "AIzaSyAk7LVAephjNt_thTFiGyr7zhRBK6D7vHk",
+  authDomain: "moto-world-a9ab6.firebaseapp.com",
+  projectId: "moto-world-a9ab6",
+  storageBucket: "moto-world-a9ab6.appspot.com",
+  messagingSenderId: "701968974372",
+  appId: "1:701968974372:web:ecea562b3d1f870e7a8eb1"
 };
 
 // Initialize Firebase

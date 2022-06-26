@@ -12,7 +12,7 @@ const MyOrders = () => {
 
 
     useEffect(() => {
-        const url = `http://localhost:5000/orders/${user.email}`;
+        const url = `https://blooming-beyond-08690.herokuapp.com/orders/${user.email}`;
 
         fetch(url, {
             method: 'GET',

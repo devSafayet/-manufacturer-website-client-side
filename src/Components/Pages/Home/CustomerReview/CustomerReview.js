@@ -4,7 +4,7 @@ import Loading from '../../../Shared/Loading/Loading';
 
 const CustomerReview = () => {
     const { data: review, isLoading } = useQuery('getreviews', () =>
-        fetch('http://localhost:5000/getreviews')
+        fetch('https://blooming-beyond-08690.herokuapp.com/getreviews')
             .then(res => res.json()))
 
     if (isLoading) {

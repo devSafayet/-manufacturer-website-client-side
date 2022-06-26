@@ -6,7 +6,7 @@ const ManageOrders = () => {
     const [orders, setorders] = useState([]);
 
     useEffect(() => {
-        const url = "http://localhost:5000/allorders";
+        const url = "https://blooming-beyond-08690.herokuapp.com/allorders";
         fetch(url, {
             method: 'GET'
         })
@@ -24,7 +24,7 @@ const ManageOrders = () => {
         const procide = window.confirm("Are you Sure, You Want to Delete?")
         if (procide) {
             // console.log(id);
-            const url = `http://localhost:5000/orders/${id}`
+            const url = `https://blooming-beyond-08690.herokuapp.com/orders/${id}`
             fetch(url, {
                 method: "DELETE",
                 headers: {
@@ -47,7 +47,7 @@ const ManageOrders = () => {
     const shiftinghendel = (_id) => {
         const procide = window.confirm("Are you Sure For Shifting?")
         if (procide) {
-            fetch(`http://localhost:5000/shiftorders/${_id}`, {
+            fetch(`https://blooming-beyond-08690.herokuapp.com/shiftorders/${_id}`, {
                 method: 'PATCH',
                 headers: {
                     'content-type': 'application/json',

@@ -7,7 +7,7 @@ const ManageProducts = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        const url = "http://localhost:5000/products";
+        const url = "https://blooming-beyond-08690.herokuapp.com/products";
 
         fetch(url, {
             method: 'GET',
@@ -26,7 +26,7 @@ const ManageProducts = () => {
         const procide = window.confirm("Are you Sure, You want to Delete?")
 
         if (procide) {
-            fetch(`http://localhost:5000/products/${id}`, {
+            fetch(`https://blooming-beyond-08690.herokuapp.com/products/${id}`, {
                 method: 'DELETE',
                 headers: {
                     'content-type': 'application/json',
