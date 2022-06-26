@@ -1,38 +1,42 @@
 import { signOut } from 'firebase/auth';
 import React from 'react';
-import { Link } from 'react-router-dom';
-import auth from '../../../Firebase.init';
 import { useAuthState } from 'react-firebase-hooks/auth';
-
+import { Link, useLocation } from 'react-router-dom';
+import auth from '../../../Firebase.init';
 const Header = () => {
-
     const [user] = useAuthState(auth);
+
     const logOut = () => {
         signOut(auth);
+        localStorage.removeItem("accessToken")
     };
+
+    const { pathname } = useLocation()
 
     const menu = <>
         <li><Link to='/'>Home</Link></li>
+
+
         {
             user
             &&
-            <li><Link to="/dashboard">Dashbord</Link></li>
+            <li><Link to="/dashbord">Dashbord</Link></li>
 
         }
-        <li><Link to='/blog'>Blogs</Link></li>
-        <li><Link to='/portfolio'>Portfolio</Link></li>
+
+        <li><Link to='/blogs'>Blogs</Link></li>
+        <li><Link to='/potfolio'>Portfolio</Link></li>
+
         <li>{
             user
                 ?
-                <Link to="/signin" onClick={logOut}>SignOut</Link>
+                <Link to="/singin" onClick={logOut}>SignOut</Link>
                 :
-                <Link to='/signin'>Signin</Link>
+                <Link to='/singin'>SignIn</Link>
         }</li>
-
 
     </>
     return (
-
         <div className="navbar bg-blue-400 sticky top-0 z-50 ">
             <div className="navbar-start">
                 <div className="dropdown">
@@ -49,8 +53,13 @@ const Header = () => {
                 <ul className="menu menu-horizontal p-0">
                     {menu}
                 </ul>
-
             </div>
+            {pathname.includes("dashbord") && <div className="navbar-end lg:hidden">
+                <label tabIndex="1" htmlFor="dashbord-slider" className="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </label>
+            </div>}
+
         </div>
     );
 };

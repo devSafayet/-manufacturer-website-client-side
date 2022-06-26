@@ -1,17 +1,17 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAuth } from 'firebase/auth';
+import { getAuth } from 'firebase/auth'
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyAqoK64GP5L7xMi7--wzSil3MXKL1wTFOE",
-    authDomain: "motor-bike-parts-28b11.firebaseapp.com",
-    projectId: "motor-bike-parts-28b11",
-    storageBucket: "motor-bike-parts-28b11.appspot.com",
-    messagingSenderId: "1029519946926",
-    appId: "1:1029519946926:web:34d6b3f2cf3895c6a4e93f"
+  apiKey: "AIzaSyCuF-SUM5XCwmUz3ssGP2kb04tX9wmqEAw",
+  authDomain: "moto-world-42bb4.firebaseapp.com",
+  projectId: "moto-world-42bb4",
+  storageBucket: "moto-world-42bb4.appspot.com",
+  messagingSenderId: "395581320029",
+  appId: "1:395581320029:web:5abd12924d55d37aaad6b4"
 };
 
 // Initialize Firebase

@@ -1,7 +1,8 @@
 import React from 'react';
-import Typical from 'react-typical';
 import './Portfolio.css';
+import Typical from 'react-typical';
 import myImg from '../../../Images/myImg.jpg';
+
 const Portfolio = () => {
     return (
         <div className='banner-area'>
@@ -105,6 +106,8 @@ const Portfolio = () => {
                     </div>
                 </div>
             </div>
+            <div class="divider"></div>
+
         </div>
     );
 };

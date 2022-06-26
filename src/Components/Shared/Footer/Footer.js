@@ -1,9 +1,11 @@
 import React from 'react';
 
+
 const Footer = () => {
     return (
         <div>
-            <footer class="footer p-10 bg-base-200 text-base-content">
+            <div class="divider"></div>
+            <footer class="footer p-10 bg-white text-base-content">
                 <div>
                     <span class="footer-title">Services</span>
                     <a class="link link-hover">Engine oil Change</a>
@@ -28,7 +30,7 @@ const Footer = () => {
             <footer class="footer px-10 py-4 border-t bg-base-200 text-base-content border-base-300">
                 <div class="items-center grid-flow-col">
 
-                    <p className='text-blue-400'>Motor Bike Parts</p>
+                    <p className='text-blue-400 text-xl'>Motor Bike Parts</p>
                 </div>
                 <div class="md:place-self-center md:justify-self-end">
                     <div class="grid grid-flow-col gap-4">
