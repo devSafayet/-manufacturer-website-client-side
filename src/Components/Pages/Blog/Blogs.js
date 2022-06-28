@@ -46,7 +46,7 @@ const Blogs = () => {
             </div> */}
             <div class="divider"></div>
             {/* Question-5 Part  */}
-            <div className='text-black text-2xl mb-9'> <span className='text-primary'> (5)Questions:-</span>
+            <div className='text-black text-2xl mb-9'> <span className='text-primary'> (4)Questions:-</span>
                 <p>What is a unit test? Why should write unit tests?</p>
             </div>
             <div className='text-2xl pb-10'><span className='text-success'>Answer:-</span>
