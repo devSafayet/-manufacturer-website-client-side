@@ -1,54 +1,45 @@
 import React from 'react';
-import service from "../../../../Images/services.png";
+import service from "../../../../Images/all-parts.jpg";
 import './Services.css';
 
 const Services = () => {
     const services = [
         {
-            id: 1,
-            name: "Transmission",
             icon: <i className="fas fa-car-battery"></i>,
             description:
-                "Car Repair & Services 7 Days Service Warranty. On Time Work Completion Skilled & Reliable.",
+                "Bike Repair & Services 3 Days Service Warranty. On Time Work Completion Skilled & Reliable.",
         },
         {
             id: 2,
-            name: "Oil Change",
+            name: "Cooling System",
             icon: <i class="fas fa-motorcycle"></i>,
             description:
-                "Car Repair & Services 7 Days Service Warranty. On Time Work Completion Skilled & Reliable.",
+                "Bike Repair & Services 3 Days Service Warranty. On Time Work Completion Skilled & Reliable.",
         },
         {
             id: 3,
-            name: "Air Conditioning",
-            icon: <i className="fas fa-fan"></i>,
-            description:
-                "Car Repair & Services 7 Days Service Warranty. On Time Work Completion Skilled & Reliable.",
-        },
-        {
-            id: 4,
-            name: "Auto Electric",
+            name: "Engine Valves",
             icon: <i className="fas fa-bolt"></i>,
             description:
-                "Car Repair & Services · 7 Days Service Warranty · On Time Work Completion Skilled & Reliable.",
+                "Bike Repair & Services 3 Days Service Warranty. On Time Work Completion Skilled & Reliable.",
         },
     ];
     return (
-        <div>
-            <div class="hero min-h-screen bg-base-200">
+        <div className='bg-base-200 sm:grid text-center pt-20 '>
+            <h2 className="text-3xl text-blue-400">Our Services</h2>
+            <div class="hero ">
                 <div class="hero-content flex-col lg:flex-row-reverse">
-                    <img src={service} class="max-w-sm rounded-lg shadow-2xl" />
+                    <img src={service} class="max-w-sm rounded-lg shadow-2xl" alt='' />
 
-                    <div className='text-center'>
+                    <div className='text-center lg:flex-row-reverse'>
 
-                        <div className="service-intro">
-                            <h2 className="text-3xl text-blue-400">Our Services</h2>
-                            <p className='m-auto'>
-                                Find Car Service In Usa. Unlimited Access. 100% Secure. Always
+                        <div className="service-intro pb-10">
+                            <p className='m-auto px-5'>
+                                Find Moto World Service In World. Unlimited Access. 100% Secure. Always
                                 Facts. Privacy Friendly. The Best Resources.
                             </p>
                         </div>
-                        <div className='flex justify-center px-2'>
+                        <div className='justify-center px-10 details pb-10 grid grid-cols-1 lg:grid-cols-3 gap-4 lg:px-12'>
                             {services.map((service) => (
                                 <div key={service.id}>
                                     <div className="service-card">

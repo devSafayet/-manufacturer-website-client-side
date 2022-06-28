@@ -81,25 +81,28 @@ const Portfolio = () => {
             {/* My Best Project link Area  */}
             <div className='mb-10 justify-center'>
                 <h1 className='text-6xl mb-8 font-semibold text-blue-400 text-center'>My Best Projects</h1>
-                <div className='flex justify-around'>
-                    <div class="card w-96 bg-base-100 shadow-xl image-full ">
+                <div className='lg:flex justify-around'>
+                    <div class="card w-96 bg-base-100 shadow-xl image-full mb-5">
                         <div class="card-body">
                             <h2 class="card-title">Apple Store!</h2>
                             <p>This is Single page simple web applications.</p>
                             <div class="card-actions">
                                 <button class="btn btn-primary text-white"><a target="_blank" href="https://apple-store-abe66.web.app/">Live Site</a></button>
-                                <button class="btn btn-success text-white"><a target="_blank" href="https://github.com/ProgrammingHeroWC4/warehouse-management-client-side-safayet003-admin">Client Site</a></button>
-                                <button class="btn btn-success text-white"><a target="_blank" href="https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-safayet003-admin">Server Site</a></button>
+
+                                <button class="btn btn-success text-white"><a target="_blank" href="https://github.com/safayet003-admin/apple-store-client-side">Client Site</a></button>
+
+                                <button class="btn btn-success text-white"><a target="_blank" href="https://github.com/safayet003-admin/apple-store-server-side">Server Site</a></button>
                             </div>
                         </div>
                     </div>
+
                     <div class="card w-96 bg-base-100 shadow-xl image-full">
                         <div class="card-body">
                             <h2 class="card-title">DR. Kaneez Fatema!</h2>
                             <p>This is DR. Kaneez Fatema Website. It's a Independent Service Provider Website.</p>
                             <div class="card-actions">
-                                <button class="btn btn-primary text-white"><a target="_blank" href="https://independent-service-prov-48603.web.app/">Live Site</a></button>
-                                <button class="btn btn-success text-white"><a target="_blank" href="https://github.com/programming-hero-web-course-4/independent-service-provider-safayet003-admin">Client Site</a></button>
+                                <button class="btn btn-primary text-white"><a target="_blank" href=" https://independent-service-prov-b483b.web.app/">Live Site</a></button>
+                                <button class="btn btn-success text-white"><a target="_blank" href="https://github.com/safayet003-admin/independent-service-provider-10">Client Site</a></button>
 
                             </div>
                         </div>

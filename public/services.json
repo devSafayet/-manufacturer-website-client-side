@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "name": "Battery",
+        "description": "Bike Repair & Services 3 Days Service Warranty. On Time Work Completion Skilled & Reliable."
+    },
+    {
+        "id": 2,
+        "name": "Cooling System",
+        "description": "Bike Repair & Services 3 Days Service Warranty. On Time Work Completion Skilled & Reliable."
+    },
+    {
+        "id": 3,
+        "name": "Engine Valves",
+        "description": "Bike Repair & Services 3 Days Service Warranty. On Time Work Completion Skilled & Reliable."
+    }
+]

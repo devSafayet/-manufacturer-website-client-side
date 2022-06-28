@@ -109,7 +109,7 @@ const PurchasParts = () => {
             <div className="card text-center card-compact w-96 bg-base-200 shadow-xl">
                 <figure><img src={tool.img} alt="" className='rounded w-full' /></figure>
                 <div className="card-body text-center">
-                    <h2 className="card-title text-blue-400 text-center items-center">{tool.name}</h2>
+                    <h2 className="card-title text-blue-400  justify-center">{tool.name}</h2>
                     <p>{tool.decreption}</p>
                     <p className='text-red-600 text-2xl'>Price :{tool.price}</p>
                     <p>Available: {tool?.quantity} Peace</p>

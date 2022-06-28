@@ -21,4 +21,9 @@
     .service-intro p {
         width: 100%;
     }
+
+    .details {
+        grid-column: 6;
+
+    }
 }
