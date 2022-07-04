@@ -1,5 +1,7 @@
 # `Moto World` (Manufacturer Website)
 
+# `Admin User & Password`(User: moto.admin@gmail.com ,Password: moto@admin)
+
 ## [Live Site](https://moto-world-a9ab6.web.app/)
 
 ## heroku deploy link
