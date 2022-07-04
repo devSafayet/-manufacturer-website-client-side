@@ -27,9 +27,11 @@ const ServiceTools = () => {
                 const count = data.count;
                 const page = Math.ceil(count / 6)
                 setPageCount(page)
+
                 // console.log(count);
             })
-    }, [])
+    }, []);
+
 
     let parts = []
     if (products) {
