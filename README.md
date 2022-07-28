@@ -4,12 +4,12 @@
 User: moto.admin@gmail.com 
 Password: moto@admin
 
-## [Live Site](https://moto-world-a9ab6.web.app/)
+## [Live Site](https://moto-world-4e151.web.app/)
 
 ## heroku deploy link
  [heroku deploy link](https://blooming-beyond-08690.herokuapp.com)
 
-## [Server Site Code](https://github.com/programming-hero-web-course1/manufacturer-website-server-side-safayet003-admin)
+## [Server Site Code](https://github.com/safayet003-admin/manufacturer-website-server-side)
 
 ## Customer Services for website `(User)`:
     * User Sign Up and SignIn And Others Google signin Options 

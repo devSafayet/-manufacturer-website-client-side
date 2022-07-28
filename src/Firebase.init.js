@@ -6,12 +6,12 @@ import { getAuth } from 'firebase/auth';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAk7LVAephjNt_thTFiGyr7zhRBK6D7vHk",
-  authDomain: "moto-world-a9ab6.firebaseapp.com",
-  projectId: "moto-world-a9ab6",
-  storageBucket: "moto-world-a9ab6.appspot.com",
-  messagingSenderId: "701968974372",
-  appId: "1:701968974372:web:ecea562b3d1f870e7a8eb1"
+  apiKey: "AIzaSyDQWSZKM0HSDrkejpfHpEA68uKqgZasKQg",
+  authDomain: "moto-world-4e151.firebaseapp.com",
+  projectId: "moto-world-4e151",
+  storageBucket: "moto-world-4e151.appspot.com",
+  messagingSenderId: "110053682597",
+  appId: "1:110053682597:web:6bc034baf685501ba60c4c"
 };
 
 // Initialize Firebase

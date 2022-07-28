@@ -24,8 +24,7 @@ const Header = () => {
 
         }
 
-        <li><Link to='/blogs'>Blogs</Link></li>
-        <li><Link to='/potfolio'>Portfolio</Link></li>
+        <li><Link to='/'>Blogs</Link></li>
 
         <li>{
             user

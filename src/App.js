@@ -1,7 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import Home from './Components/Pages/Home/Home';
 import Dashbord from './Components/Pages/Dashbord/Dashbord';
-import Blogs from './Components/Pages/Blog/Blogs';
 import Footer from './Components/Shared/Footer/Footer';
 import AddProducts from './Components/Pages/Dashbord/AddProducts/AddProducts';
 import { ToastContainer } from 'react-toastify';
@@ -20,7 +19,6 @@ import RequireUser from './Components/Hooks/RequireUser';
 import UpdateProduct from './Components/Pages/Dashbord/UpdateProduct/UpdateProduct'
 import Header from './Components/Shared/Header/Header';
 import PurchasParts from './Components/Pages/Home/PurchasParts/PurchasParts';
-import Portfolio from './Components/Pages/Portfolio/Portfolio';
 import Signup from './Components/Login/SignUp/Signup';
 import SignIn from './Components/Login/SignIn/SignIn';
 import RequireAdmin from './Components/Hooks/RequireAdmin';
@@ -33,10 +31,13 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='/purchase/:id' element={
-          <RequireUser>
+          <RequireAuth>
             <PurchasParts />
-          </RequireUser>
+          </RequireAuth>
+
+
         }></Route>
+
         <Route path='/dashbord' element={
           <RequireAuth>
             <Dashbord />
@@ -95,8 +96,6 @@ function App() {
             </RequireAdmin>
           }></Route>
         </Route>
-        <Route path='/blogs' element={<Blogs />}></Route>
-        <Route path='/potfolio' element={<Portfolio />}></Route>
         <Route path='/singin' element={<SignIn />}></Route>
         <Route path='/signup' element={<Signup />}></Route>
         <Route path='*' element={<NotFound />}></Route>
